@@ -21,15 +21,15 @@ this system at the end of the day.*
 
 ## How to Use
 
-(0) - Get an FEC API Key at api.open.fec.gov/v1. It will run without one, but makes life easier
-(0.1) - Create a .env file and load in your FEC API key as MY_KEY=YourKeyHere
-(1) - On command line, navigate to the folder containing Lobby Finder
-(2) - run this command ```python lobbyfinder.py```
-(3) - The program will prompt you to input company names that you want to look for and the final file names
-(4) - Once the program has run, it will export your .csv of results to lobbyfinder_output
-(5) - Drop the output .csv in your Lobby Finder folder or where ever you want to run the pipeline
-(6) - Enter the name of the csv in the pipeline notebook and install dependances
-(7) - Done! You should have graphics and a clean df ready to analyze
+- (0) - Get an FEC API Key at api.open.fec.gov/v1. It will run without one, but makes life easier
+- (0.1) - Create a .env file and load in your FEC API key as MY_KEY=YourKeyHere
+- (1) - On command line, navigate to the folder containing Lobby Finder
+- (2) - run this command ```python lobbyfinder.py```
+- (3) - The program will prompt you to input company names that you want to look for and the final file names
+- (4) - Once the program has run, it will export your .csv of results to lobbyfinder_output
+- (5) - Drop the output .csv in your Lobby Finder folder or where ever you want to run the pipeline
+- (6) - Enter the name of the csv in the pipeline notebook and install dependances
+- (7) - Done! You should have graphics and a clean df ready to analyze
 
 ## Example Graphics
 
