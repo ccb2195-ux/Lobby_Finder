@@ -31,5 +31,9 @@ this system at the end of the day.*
 (6) - Enter the name of the csv in the pipeline notebook and install dependances
 (7) - Done! You should have graphics and a clean df ready to analyze
 
+## Example Graphics
+
+![Company Lobbey Expenses by Year](Viz/Viz/Company_change_expenses_by_year.svg)
+
 
 Last update - 04/26/26
