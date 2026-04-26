@@ -33,7 +33,8 @@ this system at the end of the day.*
 
 ## Example Graphics
 
-![Company Lobbey Expenses by Year](Viz/Viz/Company_change_expenses_by_year.svg)
+![Company Lobbey Expenses by Year](Viz/Company_change_expenses_by_year.svg)
+
 
 
 Last update - 04/26/26
