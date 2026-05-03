@@ -31,6 +31,10 @@ this system at the end of the day.*
 - (6) - Enter the name of the csv in the pipeline notebook and install dependances
 - (7) - Done! You should have graphics and a clean df ready to analyze
 
+# FAQs and potential pitfalls
+
+- (1) When seraching for a firm like Honeywell or Northrup, you will also catch lobbying firms like Rampy Northrup LLC. You will need to clean these out by looking to see if the Client_name or registrant_name columns don't match up with the company you were looking for. 
+
 ## Example Graphics
 
 ![Company Lobbey Expenses by Year](Viz/Company_change_expenses_by_year.svg)

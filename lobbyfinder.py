@@ -116,22 +116,49 @@ def _lda_row(company, filing, role):
         (act.get("general_issue_code_display") or act.get("general_issue_code") or "")
         for act in activities
     )
+
+    seen_bills = set()
+    bill_strs  = []
+    for act in activities:
+        for bill in (act.get("bills") or []):
+            bill_type = bill.get("bill_type_display") or bill.get("bill_type") or ""
+            bill_num  = bill.get("bill_number") or ""
+            congress  = bill.get("congress_number") or ""
+            key = (bill_type, bill_num, congress)
+            if key not in seen_bills and (bill_type or bill_num):
+                seen_bills.add(key)
+                label = f"{bill_type} {bill_num}".strip()
+                if congress:
+                    label += f" ({congress}th Cong.)"
+                bill_strs.append(label)
+
+    seen_entities = set()
+    entity_strs   = []
+    for act in activities:
+        for entity in (act.get("government_entities") or []):
+            name = (entity.get("name") or "").strip()
+            if name and name not in seen_entities:
+                seen_entities.add(name)
+                entity_strs.append(name)
+
     return {
-        "source":          "Senate LDA",
-        "query_company":   company,
-        "role":            role,
-        "filing_uuid":     filing.get("filing_uuid"),
-        "filing_year":     filing.get("filing_year"),
-        "period":          filing.get("period_of_report"),
-        "filing_type":     filing.get("filing_type_display") or filing.get("filing_type"),
-        "dt_posted":       filing.get("dt_posted"),
-        "registrant_name": reg.get("name"),
-        "registrant_id":   reg.get("id"),
-        "client_name":     cli.get("name"),
-        "client_id":       cli.get("id"),
-        "income":          filing.get("income"),
-        "expenses":        filing.get("expenses"),
-        "lobbying_issues": issues,
+        "source":                "Senate LDA",
+        "query_company":         company,
+        "role":                  role,
+        "filing_uuid":           filing.get("filing_uuid"),
+        "filing_year":           filing.get("filing_year"),
+        "period":                filing.get("period_of_report"),
+        "filing_type":           filing.get("filing_type_display") or filing.get("filing_type"),
+        "dt_posted":             filing.get("dt_posted"),
+        "registrant_name":       reg.get("name"),
+        "registrant_id":         reg.get("id"),
+        "client_name":           cli.get("name"),
+        "client_id":             cli.get("id"),
+        "income":                filing.get("income"),
+        "expenses":              filing.get("expenses"),
+        "lobbying_issues":       issues,
+        "lobbying_bills":        "; ".join(bill_strs),
+        "lobbying_gov_entities": "; ".join(entity_strs),
         "url": f"https://lda.senate.gov/filings/public/filing/{filing.get('filing_uuid', '')}/print/",
     }
 
