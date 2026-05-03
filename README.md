@@ -37,14 +37,15 @@ this system at the end of the day.*
 
 ## Example Graphics
 
-![Company Lobbey Expenses by Year](Viz/Company_change_expenses_by_year.svg)
-![Company Lobbey Expenses by Year](Viz/%_change_expenses_by_year.svg)
-![Company Lobbey Expenses by Year](Viz/company_entity_spend_over_time.svg)
-![Company Lobbey Expenses by Year](Viz/entities_expenses_over_time.svg)
-![Company Lobbey Expenses by Year](Viz/entities_filings_over_time.svg)
-![Company Lobbey Expenses by Year](Viz/pct_change_total_expenses.svg)
-![Company Lobbey Expenses by Year](Viz/top_entities_by_company.svg)
-![Company Lobbey Expenses by Year](Viz/total_expenses_by_year.svg)
+![Chart 1](Viz/Company_change_expenses_by_year.svg)
+![Chart 2](Viz/%_change_expenses_by_year.svg)
+![Chart 3](Viz/company_entity_spend_over_time.svg)
+![Chart 4](Viz/entities_expenses_over_time.svg)
+![Chart 5](Viz/entities_filings_over_time.svg)
+![Chart 6](Viz/pct_change_total_expenses.svg)
+![Chart 7](Viz/top_entities_by_company.svg)
+![Chart 8](Viz/total_expenses_by_year.svg)
+![Chart 9](Viz/top_lobbying_firms_by_client.svg)
 
 
 Last Update - 05/03/26
