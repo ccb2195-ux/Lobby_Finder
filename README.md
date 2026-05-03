@@ -38,7 +38,13 @@ this system at the end of the day.*
 ## Example Graphics
 
 ![Company Lobbey Expenses by Year](Viz/Company_change_expenses_by_year.svg)
+![Company Lobbey Expenses by Year](Viz/%_change_expenses_by_year.svg)
+![Company Lobbey Expenses by Year](Viz/company_entity_spend_over_time.svg)
+![Company Lobbey Expenses by Year](Viz/entities_expenses_over_time.svg)
+![Company Lobbey Expenses by Year](Viz/entities_filings_over_time.svg)
+![Company Lobbey Expenses by Year](Viz/pct_change_total_expenses.svg)
+![Company Lobbey Expenses by Year](Viz/top_entities_by_company.svg)
+![Company Lobbey Expenses by Year](Viz/total_expenses_by_year.svg)
 
 
-
-Last update - 04/26/26
+Last Update - 05/03/26
